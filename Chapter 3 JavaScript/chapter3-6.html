@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Javacript</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+	<p>What is the weather?</p>
+	<input id="weather">
+	<button id="myButton">Submit</button>
+
+	<script type="text/javascript">
+
+	var input = document.getElementById("weather").value;
+	var button = document.getElementById("myButton")
+
+	button.onclick = function () {
+		input = document.getElementById("weather").value;
+		if (input == "rain") {
+			alert("It is raining");
+		} else {
+			alert("Well at least it's not raining");
+		}
+	}
+	
+	</script>
+
+</body>
+</html>

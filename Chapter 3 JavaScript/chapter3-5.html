@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Javacript</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+	<button id="styleChanger">Change the text</button>
+	<div id="firstDiv">This is some text</div>
+
+	<script type="text/javascript">
+
+	var myArray = new Array();
+	myArray[0] = "pizza";
+	myArray[1] = "chocolate";
+	console.log(myArray);
+
+	myOtherArray = ["rain", "sunshine"]
+	myOtherArray.push("snow");
+	myOtherArray.splice(2, 0, "hail", "cloudy");
+	console.log(myOtherArray);
+	console.log(myOtherArray.length);
+
+	document.getElementById('styleChanger').onclick = function () {
+		document.getElementById("firstDiv").innerHTML = myArray[1]; 
+	}
+	</script>
+
+</body>
+</html>

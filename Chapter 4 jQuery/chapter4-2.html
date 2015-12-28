@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning jQuery</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	<style type="text/css">
+
+	.square {
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		margin-top: 10px
+	}
+
+	#circle {
+		width: 200px;
+		height: 200px;
+		background-color: green;
+		border-radius: 100px;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="circle"></div>
+	<p>This is some sample text</p>
+	<iframe src="https://www.cnn.com"></iframe>
+
+
+	<script type="text/javascript">
+
+	$("#circle").hover(function(){
+		$("p").html("Changed nerd!");
+		$("iframe").attr("src", "https://www.google.com/?gws_rd=ssl");
+	});
+
+	</script>
+
+</body>
+</html>

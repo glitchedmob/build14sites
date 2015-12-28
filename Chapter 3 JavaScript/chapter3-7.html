@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Javacript</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+	<p>How many fingers am I holding up</p>
+	<input id="answer">
+	<button id="myButton">Submit</button>
+
+	<script type="text/javascript">
+	
+	var input = document.getElementById("answer").value;
+	var submit = document.getElementById("myButton");
+
+	submit.onclick = function () {
+		input = document.getElementById("answer").value;
+		var rand = Math.random();
+		rand = rand * 6;
+		rand = Math.floor(rand);
+
+		if (rand == input) {
+			alert("That is correct! Good job!");
+		} else {
+			alert("That's wrong. My number was " + rand);
+		}
+	}
+
+	</script>
+
+</body>
+</html>

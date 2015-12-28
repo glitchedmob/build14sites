@@ -31,18 +31,24 @@
 <body>
 
 	<h1>Asyncronous Javascript and XML</h1>
+	<p id="message">What will I become</p>
+	<button id="submit">Fetch</button>
 
 	<script type="text/javascript">
 
-		$.get("files/test.html", function (data) {
-			alert(data);
-		});
+	/*
+	$.get("files/test.html", function (data) {
+		alert(data);
+	});
+	*/
 
+	$("#submit").click(function () {
 		$.ajax({
 			url:"files/test.html"
 		}).done(function (data) {
-			alert(data);
+			$("#message").html(data);
 		});
+	})
 
 	</script>
 
